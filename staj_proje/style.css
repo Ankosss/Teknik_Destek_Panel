@@ -1,0 +1,122 @@
+﻿#ust {
+    background-color: #222831;
+    min-height: 100px;
+}
+#sol
+{
+    background-color: #393e46;
+    width: 15%;
+    min-height: 633px;
+    float:left;
+}
+#orta
+{
+    background-color: #eeeeee;
+    width: 85%;
+    min-height: 633px;
+    float: left;
+}
+#tp
+{
+    width: 100%;
+    min-height: 15px;
+    background-color: aqua;
+    display: block;
+    text-align: left;
+}
+.login-form {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 90px 30px;
+    width: 250px;
+    box-shadow: 0 5px 13.5px 1.5px rgb(0 0 0 / 10%);
+}
+
+.login-form input {
+    width: calc(100% - 20px);
+    border: solid 1px #f5f5f5;
+    margin-bottom: 10px;
+    background: #f5f5f5;
+    outline: none;
+    padding: 7px 10px;
+}
+
+.login-form #bt_giris  , 
+.login-form #bt_kayit , 
+#bt_talep_kayit, #bt_talep_gonder
+{
+    padding: 10px 20px;background: #271721;color: white;font-size: 18px;margin-top: 25px;border-radius: 3px;border: solid 4px #271721;cursor: pointer;transition: all .3s ease;width: 100%;
+
+}
+
+    .login-form #bt_giris:hover,
+    .login-form #bt_kayit:hover,
+    #bt_talep_kayit:hover,
+    ##bt_talep_gonder:hover
+    {
+        background: none;
+        color: #271721;
+    }
+
+#bt_talep_kayit, #bt_talep_gonder 
+{
+    width: 150px;
+}
+
+#bt_talep_gonder 
+{
+display:block;
+}
+.login-form a {
+    text-decoration: none;
+    color: #271721;
+    font-size: 18px;
+    display: block;
+    margin-top: 10px;
+}
+
+#sol input {
+    background: #00adb5;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-bottom: solid 5px #222831;
+}
+#orta #panel_talepler input, #panel_taleplerim input {
+    border: none;
+    outline: none;
+    padding: 10px 35px;
+    width: 100%;
+    background-color: #00adb5;
+    display: inline;
+    text-align: left;
+    border-bottom: solid 1px #222831;
+    font-size: 16px;
+    border-left: solid 2px #222831;
+}
+
+
+#panel_talep_goster input, #panel_talep_gonder input {
+    border: solid .5px #d4d4d4;
+    padding: 7px 10px;
+    outline: none;
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
+
+#panel_talep_goster textarea, #panel_talep_gonder textarea {
+    border: solid .5px #d4d4d4;
+    padding: 7px 10px;
+    outline: none;
+    resize: none;
+}
+
+#panel_talep_goster select {
+    height: 30px !important;
+    padding: 0px 7px;
+    border: solid 1px #d4d4d4;
+}
