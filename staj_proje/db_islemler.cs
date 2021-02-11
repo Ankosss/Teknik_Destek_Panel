@@ -18,6 +18,9 @@ namespace staj_proje
         {
             baglan = new SqlConnection(WebConfigurationManager.ConnectionStrings["baglantii"].ConnectionString);
         }
+        /* Gmail üzerinden gerekli ayarları yaptıktan sonra sıkıntı olmadan kullanabilirsiniz. */
+        public String mail_adres = "gönderiliecek mail adresinizi giriniz.";
+        public String mail_sifre = "mail adresinize ait şifrenizi giriniz.";
         public Boolean kul_giris(String mail, String sif)
         {
             Boolean giris_durum = false;
@@ -258,13 +261,13 @@ namespace staj_proje
         {
 
             MailMessage email = new MailMessage();
-            email.From = new MailAddress("umitcan.inesillioglu@gmail.com");
+            email.From = new MailAddress(mail_adres);
             email.To.Add(mail);
             email.Subject = "Talep Sonuç";
             email.Body = mail_icerik;
             email.IsBodyHtml = true;
             SmtpClient smtp = new SmtpClient();
-            smtp.Credentials = new NetworkCredential("umitcan.inesillioglu@gmail.com", "619jef619");
+            smtp.Credentials = new NetworkCredential(mail_adres, mail_sifre);
             smtp.Port = 587;
             smtp.Host = "smtp.gmail.com";
             smtp.EnableSsl = true;
